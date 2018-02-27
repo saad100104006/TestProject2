@@ -32,3 +32,31 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
+
+
+ext {
+    bintrayRepo = 'androidLibrary'
+    bintrayName = 'androidLibrary'
+
+    publishedGroupId = 'testapps.com.testproject'
+    libraryName = 'androidLibrary'
+    artifact = 'androidLibrary'
+
+    libraryDescription = 'testing library'
+
+    siteUrl = 'https://github.com/saad100104006/TestProject2'
+    gitUrl = 'https://github.com/saad100104006/TestProject2.git'
+
+    libraryVersion = '1.0'
+
+    developerId = 'developerId'
+    developerName = 'Developer Name'
+    developerEmail = 'saadtan@email.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+
